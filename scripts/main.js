@@ -1,7 +1,8 @@
-import { addNewTask, handleTaskBehavior } from "./functions.js";
+import { addNewTask, handleTaskBehavior, fillTaskList } from "./functions.js";
 
 const addBtn = document.getElementById("addBtn");
 const myUL = document.getElementById("myUL");
 
 addBtn.addEventListener("click", addNewTask);
 myUL.addEventListener("click", handleTaskBehavior);
+window.addEventListener("DOMContentLoaded", fillTaskList);
